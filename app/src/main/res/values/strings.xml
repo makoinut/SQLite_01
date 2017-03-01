@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">SQLite_01</string>
+
+    <string name="ing_telefono">Ingrese telefonos</string>
+    <string name="ing_cedula">Ingrese cedula</string>
+    <string name="ing_especilidad">Ingrese Especialidad</string>
+    <string name="ing_nombre">Ingrese Nombre</string>
+    <string name="ing_biografia">Ingrese biografia</string>
+    <string name="info_cantidad">Cantidad</string>
+    <string name="datos_incompletos">Hay campos sin dilegenciar</string>
+    <string name="registro_creado">El regístro del abogado, %1$s ha sido creado</string>
+    <string name="en_implementacion">En implementación</string>
+    <string name="registros">Registros actuales %1$s</string>
+    <string name="sin_registros">No hay registros para mostrar</string>
+
+
+</resources>

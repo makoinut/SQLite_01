@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.sena.esp.sqlite_01.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/textCedula"
+                android:hint="@string/ing_cedula"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/textNombre"
+                android:hint="@string/ing_nombre"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:ems="10"
+                android:id="@+id/textTelefono"
+                android:hint="@string/ing_telefono"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/textEspecialidad"
+                android:hint="@string/ing_especilidad"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:id="@+id/textBiografia"
+                android:hint="@string/ing_biografia"
+                android:layout_height="200px"
+                android:layout_centerVertical="true"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp">
+
+                <Button
+                    android:text="Guardar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/buttonGuardar"
+                    android:layout_weight="1"
+                    android:onClick="guardar" />
+
+                <Button
+                    android:text="Consultar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/buttonConsultar"
+                    android:layout_weight="1"
+                    android:onClick="consultar" />
+
+                <Button
+                    android:text="Listar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/buttonListar"
+                    android:layout_weight="1"
+                    android:onClick="listar" />
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="@string/info_cantidad"
+                android:textSize="24dp"
+                android:layout_marginTop="@dimen/margen_superior_grande"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:id="@+id/cantidadTv"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
